@@ -44,8 +44,8 @@ io.on("errors", function(errors) {
 	console.log("[WDS] Errors while compiling.");
 	for(var i = 0; i < errors.length; i++)
 		console.error(stripAnsi(errors[i]));
-	if(initial) return initial = false;
-	reloadApp();
+	//if(initial) return initial = false;
+	//reloadApp();
 });
 
 io.on("proxy-error", function(errors) {
